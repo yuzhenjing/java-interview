@@ -1,0 +1,54 @@
+socket 网络编程
+
+1.什么是网络编程
+    计算机网络的构成是什么？
+    什么是网络编程？
+    什么是网络  在计算机领域中 网络是信息传输 接收 共享的虚拟平台
+    通过它可以把点 面 体 的信息联系到一起 从而实现这些资源的共享
+
+socket(套接字)  与TCP UDP
+
+socket 作用于组成
+
+在网络传输中用于唯一标识两个端点之间的连接
+端点包括 IP port
+
+ API DatagramSocket
+ 用于接收与发送UDP的类
+ 负责发送某一个UDP包，或者接收UDP包
+ 不同于TCP ,UDP并没有合并到Socket API中
+
+ DatagramSocket()  创建简单实例 不指定端口与IP
+
+ DatagramSocket(int port) 创建固定端口实例
+
+ receive(DatagramSocket d)  接收
+
+ send(DatagramSocket d) 发送
+
+ close();关闭释放资源
+
+ DatagramPacket 用于处理报文
+
+ UDP 的发送实体也是接收实体
+
+UDP 是什么
+ 是一种用户数据报协议 又称用户数据报文协议
+ 是一个简单的传输协议 不需要连接
+ 它一旦把数据发送出去 就不保留数据备份
+结构 简单 速度快  容易丢包 可以广播
+
+UDP ---DNS TFTP SMTP   视频音频 普通数据
+
+
+UDP  单播  广播  多播
+
+
+
+
+
+
+
+
+
+
